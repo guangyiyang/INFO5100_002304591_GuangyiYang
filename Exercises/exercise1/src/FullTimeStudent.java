@@ -1,11 +1,8 @@
-package com.student;
-
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.ListResourceBundle;
 
-public class FullTimeStudent extends Student{
+public class FullTimeStudent extends Student {
     private List<Integer> examScores;
     public FullTimeStudent(String name){
         super(name);
