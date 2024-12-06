@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.final_project.views.Main"
+            prefHeight="400.0" prefWidth="600.0">
+
+</AnchorPane>-->
+
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.collections.FXCollections?>
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.final_project.controllers.MainController">
+<top>
+    <ToolBar>
+        <Button fx:id="uploadButton" text="Upload Image" onAction="#uploadImage"/>
+        <Button fx:id="showProperties" text="Show Image Properties" onAction="#showProperties"/>
+
+        <ComboBox fx:id="formatComboBox" prefWidth="150" />
+        <Button fx:id="downloadButton" text="DownLoad Image" onAction="#downloadImage"/>
+
+        <Button text="Apply Filters" onAction="#openWindow"/>
+    </ToolBar>
+</top>
+<center>
+    <ImageView fx:id="imageView" fitWidth="600" fitHeight="400" preserveRatio="true"/>
+
+</center>
+
+    <bottom>
+        <Label id ="text" layoutX="50" layoutY="50" />
+    </bottom>
+
+</BorderPane>
